@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    @StateObject private var settings = SettingsViewModel()
+    
+    // Helper function to get Color from string
+    func colorFromString(_ name: String) -> Color {
+        switch name.lowercased() {
+        case "blue": return .blue
+        case "green": return .green
+        case "red": return .red
+        default: return .white
         }
-        .padding()
+    }
+    
+    var body: some View {
+        ZStack {
+            colorFromString(settings.backgroundColor) // Set background color
+                .edgesIgnoringSafeArea(.all)
+            
+            Text("Hello, SwiftUI!")
+                .font(.largeTitle)
+                .foregroundColor(settings.theme == "night" ? .white : .black) // Adjust text color based on theme
+                .padding()
+        }
+        .preferredColorScheme(settings.theme == "night" ? .dark : .light) // Switch themes
     }
 }
 

@@ -11,6 +11,8 @@
 		80721B4D2D8AFBB000C8C539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80721B4C2D8AFBB000C8C539 /* ContentView.swift */; };
 		80721B4F2D8AFBB100C8C539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80721B4E2D8AFBB100C8C539 /* Assets.xcassets */; };
 		80721B522D8AFBB100C8C539 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80721B512D8AFBB100C8C539 /* Preview Assets.xcassets */; };
+		80721B592D8AFCBC00C8C539 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80721B582D8AFCBC00C8C539 /* Settings.bundle */; };
+		80721B5B2D8B071900C8C539 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80721B5A2D8B071900C8C539 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		80721B4C2D8AFBB000C8C539 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80721B4E2D8AFBB100C8C539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80721B512D8AFBB100C8C539 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80721B582D8AFCBC00C8C539 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		80721B5A2D8B071900C8C539 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				80721B4C2D8AFBB000C8C539 /* ContentView.swift */,
 				80721B4E2D8AFBB100C8C539 /* Assets.xcassets */,
 				80721B502D8AFBB100C8C539 /* Preview Content */,
+				80721B582D8AFCBC00C8C539 /* Settings.bundle */,
+				80721B5A2D8B071900C8C539 /* SettingsViewModel.swift */,
 			);
 			path = ThemeSelectorApp;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80721B522D8AFBB100C8C539 /* Preview Assets.xcassets in Resources */,
+				80721B592D8AFCBC00C8C539 /* Settings.bundle in Resources */,
 				80721B4F2D8AFBB100C8C539 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			files = (
 				80721B4D2D8AFBB000C8C539 /* ContentView.swift in Sources */,
 				80721B4B2D8AFBB000C8C539 /* ThemeSelectorAppApp.swift in Sources */,
+				80721B5B2D8B071900C8C539 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
